@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt"
+        android:text="Bluetooth"
+        android:textSize="20sp"/>
+    <Button
+        android:layout_below="@id/txt"
+        android:id="@+id/btnTurnOn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Turn On"
+        android:layout_marginTop="16dp"/>
+    <Button
+        android:id="@+id/btnGetVisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Get Visible"
+        android:layout_below="@id/btnTurnOn"
+        android:layout_marginTop="16dp"/>
+    <Button
+        android:id="@+id/btnListDevices"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="List Devices"
+        android:layout_below="@id/btnGetVisible"
+        android:layout_marginTop="16dp"/>
+    <Button
+        android:id="@+id/btnTurnOff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Turn Off"
+        android:layout_below="@id/btnListDevices"
+        android:layout_marginTop="16dp"/>
+    <ListView
+        android:id="@+id/lvDevices"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnTurnOff"
+        android:layout_marginTop="8dp" />
+</RelativeLayout>
